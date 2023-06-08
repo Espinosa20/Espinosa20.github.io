@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+body {
+  background-image: url('https://media.gq.com.mx/photos/5ff4909934f0ef41de7cf420/16:9/w_2560%2Cc_limit/FOTO%2520PORTADA.jpg');
+  animation: animateBackground 60s linear infinite;
+  color: #fff;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Estilos para el contenedor de resultados */
+#resultado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilos para la tarjeta de producto */
+.card {
+  background-color: #1b1a1a;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 20px;
+  width: 230px;
+}
+
+/* Estilos para la imagen del producto */
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Estilos para el título del producto */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilos para la descripción del producto */
+.card-description {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos para el precio del producto */
+.card-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilos para el botón de compra */
+.card-button {
+  background-color: #fff200;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #e55e00;
+}
+
+
+/* Estilo de la lista desplegable */
+select.form-control {
+  width: 200px;
+  padding: 17px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+select.form-control option {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 0px;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.menu-items {
+  margin-right: 20px;
+}
+
+.menu-items a,
+.menu-items button {
+  margin-left: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+
+#clientName {
+  display: none;
+}
+
+nav button {
+  font-family: 'Noto Sans JP', sans-serif;
+  border-radius: 8px;
+  background-color: #000000;
+  color: #fff;
+  padding: 5px 18px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #232824;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #000000;
+  padding: 20px;
+  width: 400px;
+  margin: 150px auto;
+}
+
+.modal h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+
+.modal button {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px #000000;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #232824;
+}
+
+.btn-primary{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px #000000;
+    cursor: pointer;
+}
+.goal {
+    width: 400px;
+    margin: 20px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .goal img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .goal h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .goal p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 20px 20px;
+  }
+  
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000000;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+  }
+  
+  input,
+  button {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px #000000;
+    cursor: pointer;
+  }
+  
+  input::placeholder {
+    color: #7f8fa6;
+  }
+ 
+  #signup:hover {
+    background-color: #232824;
+  }
